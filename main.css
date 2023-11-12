@@ -1,50 +1,72 @@
 @import url('https://fonts.googleapis.com/css2?family=Nosifer&family=Roboto:wght@100&display=swap');
-*{
+
+* {
     padding: 0%;
     margin: 0%;
 }
-.main-outer{
+
+.main-outer {
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
+    height: auto;
     background-image: url('https://img.freepik.com/free-photo/sunset-silhouettes-trees-mountains-generative-ai_169016-29376.jpg?w=1060&t=st=1698376553~exp=1698377153~hmac=3b72e2d090dedb1954a6e8e5f6d73bc55c83db72291230405fb203f7b0cdb332');
     background-size: cover;
     background-position: center;
-
+    flex-direction: column;
     display: flex;
     align-items: center;
     justify-content: center;
 
+
 }
-.inner-wrapper{
+
+.inner-wrapper {
     display: flex;
     flex-direction: column;
     width: 80%;
     height: 80%;
-    background-color: rgba(255,255,255,0.7);
+    background-color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 10px;
 }
-.top-title-wrapper{
+
+.top-title-wrapper {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-   
+
 }
-.top-title-wrapper h1{
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    appearance: textfield;
+    -moz-appearance: textfield;
+    /* Firefox */
+}
+
+.top-title-wrapper h1 {
     text-align: center;
-    font-size: 25px ;
+    font-size: 25px;
     margin: 0;
     padding: 10px 0;
     font-family: 'Nosifer', sans-serif;
-   
+
 }
-.controller-wrapper{
+
+.controller-wrapper {
     width: 100%;
     height: 50px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.controller-item{
+
+.controller-item {
     height: 100%;
     flex: 1;
     padding: 5px;
@@ -53,7 +75,8 @@
     align-items: center;
     justify-content: center;
 }
-.item-inner{
+
+.item-inner {
     background-color: white;
     flex: 1;
     height: 100%;
@@ -64,24 +87,20 @@
     align-items: center;
     padding-left: 5px;
 }
-.playground{
+
+.playground {
     display: flex;
     flex: 1;
     align-items: center;
     justify-content: center;
-    flex-direction: column ;
+    flex-direction: column;
 }
-.button-bar{
+
+.button-bar {
     height: 50px;
     width: 100%;
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding: 0 20px ;
+    padding: 0 20px;
 }
-
-
-
-
-
-
