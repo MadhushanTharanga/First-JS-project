@@ -30,35 +30,55 @@
                 </div>
                 <div class="controller-item">
                     <div class="item-inner">
-                        <span>Q : 0 / 10</span>
+                        <span>Q : <span id="qNunmber">0</span> / 10</span>
                     </div>
                 </div>
                 <div class="controller-item">
                     <div class="item-inner" style="white-space: nowrap;">
-                        <span>Result : (C : 10) | (W : 10) | (S : 5)</span>
+                        <span>Result : (C : <span id="c">0</span> ) | (W : <span id="w">0</span>) | (S : <span id="s">0</span>)</span>
                     </div>
                 </div>
                 <div class="controller-item" >
                     <div class="item-inner" style="padding: 0%;">
-                        <button onclick="start()" class="btn btn-primary" style="width: 100%; height: 100%;">Start</button>
+                        <button id="btn-start" onclick="start()" class="btn btn-primary" style="width: 100%; height: 100%;">Start</button>
                     </div>
-                </div>
+                </div> 
                 
             </div>
             <div class="playground">
                 <h2 class="question">
-                    <span class="f-number">10</span>
-                    <span class="op">+</span>
-                    <span class="l-number">20</span>
+                    <span class="f-number" id="f-number">?</span>
+                    <span class="op" id="op">?</span>
+                    <span class="l-number" id="l-number">?</span>
                     =
-                    <span class="answer">??</span>
+                    <span class="answer" >??</span>
                 </h2>
-                <input type="number" placeholder="Answer Here" class="form-control" style="width: 200px ;">
+                <input id="answer" type="number" step=".01" placeholder="Answer Here" class="form-control" style="width: 200px ;">
             </div>
             <div class="button-bar">
-                <button class="btn btn-outline-dark">Skip</button> &nbsp;
-                <button class="btn btn-primary">Submit</button>
+                <button id="btn-submit" class="btn btn-outline-danger" onclick="resetQizz()">Reset</button> &nbsp;
+                <button id="btn-skip" class="btn btn-outline-dark" onclick="skipQizz()">Skip</button> &nbsp;
+                <button id="btn-reset" class="btn btn-primary" onclick="submitData()">Submit</button>
             </div>
+        </div>
+        <div class="container">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>First Number</th>
+                        <th>Last Number</th>
+                        <th>Operator</th>
+                        <th>Corect Answer</th>
+                        <th>User Answer</th>
+                        <th>Is Correct</th>
+                        <th>Is Skipped</th>
+                        <th>Time</th>
+                    </tr>
+                </thead>
+                <tbody id="answer-body">
+
+                </tbody>
+            </table>
         </div>
        
     </div>
