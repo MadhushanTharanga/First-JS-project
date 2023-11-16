@@ -66,7 +66,7 @@ const manageTime = () => {
         clearInterval(timeInterval);
 
         timeInterval = setInterval(() => {
-            sec++;
+            sec++;AS
 
             if (sec < 10) {
                 secElement.textContent = '0' + sec;

@@ -10,6 +10,7 @@
     min-height: 100vh;
     height: auto;
     background-image: url('https://img.freepik.com/free-photo/sunset-silhouettes-trees-mountains-generative-ai_169016-29376.jpg?w=1060&t=st=1698376553~exp=1698377153~hmac=3b72e2d090dedb1954a6e8e5f6d73bc55c83db72291230405fb203f7b0cdb332');
+    /* background-image: url('https://img.freepik.com/free-vector/spooky-night-forest-background-with-full-moon_1308-78373.jpg?w=996&t=st=1699978969~exp=1699979569~hmac=6bfa9d0ea7feea6a4e229c3bfed28ddcfbb6ee63a371c0983b2fac44ca16bbfe'); */
     background-size: cover;
     background-position: center;
     flex-direction: column;
